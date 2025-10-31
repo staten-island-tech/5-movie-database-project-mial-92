@@ -26,15 +26,14 @@ genre_list = ["Drama",
               "Biography", 
               "Suspense", 
               "Animated"]
-print(genre_list)
-genre = input("What genre are you looking for?")
 for i in range(0, len(data)):
-    if genre in data[i]["genres"]:
+    print(data[i]["title"])
+    print(f"These are the genres: {genre_list}")
+    genre = input("What genre are you looking for? ")
+    year = input("What year, 1961 - 2023 ")
+    if genre in data[i]["genres"] and year in str(data[i]["year"]):
         print(data[i]["title"])
 
-timeperiod = input("What time period would you like your movie to be from - choose from 1961 to 2023")
-for i in range(0, len(data)):
-    if timeperiod in data[i]["year"]:
-        print(data[i]["title"])
+
 
 
