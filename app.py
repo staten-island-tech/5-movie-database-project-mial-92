@@ -5,8 +5,8 @@ movies = open("./movies.json", encoding="utf8")
 data = json.load(movies)
 for i in range(0,len(data)):
         print(data[i]["title"])
-        
-genre_list = ["Drama", 
+
+""" genre_list = ["Drama", 
               "Crime", 
               "War", 
               "Comedy", 
@@ -33,9 +33,9 @@ for i in range(0, len(data)):
     genre = input("What genre are you looking for? ")
     year = input("What year, 1961 - 2023 ")
     if genre in data[i]["genres"] and year in str(data[i]["year"]):
+        print(data[i]["title"]) """
+
+year2 = input("What year, 1961 - 2023 ")
+for i in range(0, len(data)):
+    if year2 < str(data[i]["year"]):
         print(data[i]["title"])
-
-
-
-
-
