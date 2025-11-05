@@ -39,3 +39,14 @@ year2 = input("What year, 1961 - 2023 ")
 for i in range(0, len(data)):
     if year2 < str(data[i]["year"]):
         print(data[i]["title"])
+   
+year3 = input("What year, 1961 - 2023 ")
+year4 = input("What year, 1961 - 2023 ")
+for i in range(0, len(data)):
+    if year3 < str(data[i]["year"]) and year4 > str(data[i]["year"]):
+        print(data[i]["title"])
+
+year5 = input("What year, 1961 - 2023 ")
+for i in range(0, len(data)):
+    if year5 in str(data[i]["year"]):
+        print(data[i]["title"])
